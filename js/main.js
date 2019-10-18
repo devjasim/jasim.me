@@ -92,3 +92,12 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+
+//water ripples
+$('.js-section-home').ripples({
+    resolution: 600,
+    dropRadius: 20,
+    perturbance: 0.04,
+});
+
+
