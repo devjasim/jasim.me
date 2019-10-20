@@ -312,8 +312,34 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     }
     .js-project{
         .card{
-            @extend .bg-mattBlack;
+            border:none;
+            background:none;
+            .card-body{
+                h5{
+                    margin-top:rem(15px);
+                }
+                h4{
+                    margin-top:15px;
+                }
+                p{
+                    margin-bottom:rem(20px);
+                }
+                .btn-primary{
+                    padding:10px 20px;
+                    border-radius:50px;
+                    border:none;
+                    @extend .bg-mattGreen;
+                    margin-bottom:40px;
+                    &:hover,
+                    &:focus,
+                    &.active:focus{
+                        box-shadow:none;
+                        border:none;
+                    }
+                }
+            }
         }
+
     }
 }
 //section project end
@@ -420,13 +446,35 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 
 
 
-
+// start experience section
 .js-experience-section{
     background:url('../assets/images/bg-image.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     display:block;
+    h2{
+        margin-bottom: 40px;
+    }
+    .ml-30{
+        margin-left:30px;
+    }
+    .js-education-details,
+    .js-experience-details{
+        @extend .bg-mattGray;
+        padding:25px 20px;
+        margin-bottom:30px;
+    }
+    .js-education-details{
+        margin-right:30px;
+    }
+    .js-experience-details{
+        margin-left:30px;
+        border-radius:5px;
+    }
+    
 }
+ 
+// end experience section 
 
 
 .progress{

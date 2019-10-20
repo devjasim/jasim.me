@@ -1,10 +1,11 @@
-.bg-mattBlack, body, .js-section-project .js-project .card {
+.bg-mattBlack, body {
   background-color: #100E17; }
 
 .text-mattBlack {
   color: #100E17; }
 
-.bg-mattGray, .section-header .navbar.active, .js-section-about-do .service {
+.bg-mattGray, .section-header .navbar.active, .js-section-about-do .service, .js-experience-section .js-education-details,
+.js-experience-section .js-experience-details {
   background-color: #1E1E24; }
 
 .text-mattGray {
@@ -16,7 +17,7 @@
 .text-fontWhite, body, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span, .js-section-home .js-personal-dtls ul li a {
   color: #E7E7E8; }
 
-.bg-mattGreen, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span {
+.bg-mattGreen, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span, .js-section-project .js-project .card .card-body .btn-primary {
   background-color: #FF4F4F; }
 
 .text-mattGreen, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i {
@@ -221,6 +222,23 @@ body {
   .js-section-project h2 {
     text-align: center;
     margin-bottom: 2.5rem; }
+  .js-section-project .js-project .card {
+    border: none;
+    background: none; }
+    .js-section-project .js-project .card .card-body h5 {
+      margin-top: 0.9375rem; }
+    .js-section-project .js-project .card .card-body h4 {
+      margin-top: 15px; }
+    .js-section-project .js-project .card .card-body p {
+      margin-bottom: 1.25rem; }
+    .js-section-project .js-project .card .card-body .btn-primary {
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: none;
+      margin-bottom: 40px; }
+      .js-section-project .js-project .card .card-body .btn-primary:hover, .js-section-project .js-project .card .card-body .btn-primary:focus, .js-section-project .js-project .card .card-body .btn-primary.active:focus {
+        box-shadow: none;
+        border: none; }
 
 .js-professional-skill ul {
   margin: 0;
@@ -303,6 +321,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: block; }
+  .js-experience-section h2 {
+    margin-bottom: 40px; }
+  .js-experience-section .ml-30 {
+    margin-left: 30px; }
+  .js-experience-section .js-education-details,
+  .js-experience-section .js-experience-details {
+    padding: 25px 20px;
+    margin-bottom: 30px; }
+  .js-experience-section .js-education-details {
+    margin-right: 30px; }
+  .js-experience-section .js-experience-details {
+    margin-left: 30px;
+    border-radius: 5px; }
 
 .progress {
   margin-top: 50px; }
