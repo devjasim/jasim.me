@@ -57,7 +57,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 }
 .image-color-overlay{
     background:rgba(0, 0, 0, 0.9);
-    height:100%;
+    min-height:100vh;
 }
 .section-separator{
     padding-top:rem(100px);
@@ -69,7 +69,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     background-repeat:no-repeat;
     background-size:cover;
     display:block;
-    height:100vh;
+    min-height:100vh;
 }
 
 .section-header{
@@ -129,7 +129,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     }
     .js-personal-dtls{
         margin-top:rem(100px);
-        span{
+        span.title{
             @extend .text-fontWhite;
             font-weight:600;
             font-size:rem(18px);
@@ -138,6 +138,15 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             border-radius:50px;
             border-bottom-left-radius:0;
             
+        }
+        span.wrap{
+            @extend .text-fontWhite;
+            font-weight:400;
+            font-size:rem(28px);
+            @extend .bg-mattGreen;
+            padding:10px 35px;
+            border-radius:50px;
+            border-bottom-left-radius:0;
         }
         h2{
             margin-top:rem(30px);

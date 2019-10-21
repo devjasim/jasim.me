@@ -45,7 +45,7 @@ body {
 
 .image-color-overlay {
   background: rgba(0, 0, 0, 0.9);
-  height: 100%; }
+  min-height: 100vh; }
 
 .section-separator {
   padding-top: 6.25rem;
@@ -56,7 +56,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .section-header .navbar {
   -webkit-transition: all ease-out 0.25s;
