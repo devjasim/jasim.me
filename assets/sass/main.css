@@ -15,19 +15,19 @@
   color: #1E1E24;
 }
 
-.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover {
+.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover, .skillbar {
   background-color: #E7E7E8;
 }
 
-.text-fontWhite, body, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a {
+.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a {
   color: #E7E7E8;
 }
 
-.bg-mattGreen, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-project .js-project .card .card-body .btn-primary {
+.bg-mattGreen, .btn, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap {
   background-color: #FF4F4F;
 }
 
-.text-mattGreen, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i {
+.text-mattGreen, .btn:hover, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i, .skillbar .skillbar-bar {
   color: #FF4F4F;
 }
 
@@ -53,6 +53,27 @@ body h4 {
   font-weight: 400;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #FF4F4F;
+  margin-top: 20px;
+  -webkit-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn i {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background: none;
+  border: 1px solid #FF4F4F;
+}
+
 .wrapper {
   width: 100%;
   display: block;
@@ -70,7 +91,7 @@ body h4 {
 }
 
 .image-bg-one {
-  background: url("../assets/images/bg-image.png");
+  background: url("../images/bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -292,6 +313,7 @@ body h4 {
   padding: 0;
   list-style: none;
   margin-top: 20px;
+  display: inline-block;
 }
 
 .section-about .js-about-knowladge .know-menu li {
@@ -303,6 +325,10 @@ body h4 {
   border: 1px solid #FF4F4F;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.section-about .js-about-knowladge .btn {
+  margin-top: 20px;
 }
 
 .js-section-about-do h2 {
@@ -339,7 +365,7 @@ body h4 {
 }
 
 .js-section-project {
-  background: url("../assets/images/bg-image.png");
+  background: url("../images/bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -355,6 +381,13 @@ body h4 {
   background: none;
 }
 
+.js-section-project .js-project .card img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .js-section-project .js-project .card .card-body h5 {
   margin-top: 0.9375rem;
 }
@@ -367,17 +400,8 @@ body h4 {
   margin-bottom: 1.25rem;
 }
 
-.js-section-project .js-project .card .card-body .btn-primary {
-  padding: 10px 20px;
-  border-radius: 50px;
-  border: none;
+.js-section-project .js-project .card .card-body .btn {
   margin-bottom: 40px;
-}
-
-.js-section-project .js-project .card .card-body .btn-primary:hover, .js-section-project .js-project .card .card-body .btn-primary:focus, .js-section-project .js-project .card .card-body .btn-primary.active:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
 }
 
 .js-professional-skill ul {
@@ -530,5 +554,34 @@ body h4 {
 
 .progress {
   margin-top: 50px;
+}
+
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  height: 14px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.skillbar .skill-bar-percent {
+  position: absolute;
+  right: 5px;
+  bottom: 100%;
+  font-size: 11px;
+  height: 25px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.skillbar .skillbar-bar {
+  height: 10px;
+  width: 0px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 /*# sourceMappingURL=main.css.map */
