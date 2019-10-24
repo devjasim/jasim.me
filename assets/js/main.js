@@ -68,12 +68,18 @@ window.onload = function() {
 };
 
 
-
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
+$(".owl-carousel").owlCarousel({
+    autoplay: true,
+    lazyLoad: true,
+    loop: true,
+    margin: 20,
+    // animateOut: 'fadeOut',
+    // animateIn: 'fadeIn',
+    responsiveClass: true,
+    autoHeight: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    nav: true,
     responsive:{
         0:{
             items:1,
@@ -81,15 +87,16 @@ $('.owl-carousel').owlCarousel({
         },
         600:{
             items:1,
-            nav:false
+            nav:true
         },
         1000:{
-            items:1,
+            items:2,
             nav:true,
-            loop:false
+            loop:true
         }
     }
-})
+});
+//end owl carousel
 
 
 
@@ -115,31 +122,63 @@ $('.skillbar').skillBars({
     }
 });
 
-$(function() {
-    $('.chart').easyPieChart({
-      // The color of the curcular bar. You can pass either a css valid color string like rgb, rgba hex or string colors. But you can also pass a function that accepts the current percentage as a value to return a dynamically generated color.
-      barColor: '#ef1e25',
-      // The color of the track for the bar, false to disable rendering.
-      trackColor: '#f2f2f2',
-      // The color of the scale lines, false to disable rendering.
-      scaleColor: '#dfe0e0',
-      // Defines how the ending of the bar line looks like. Possible values are: butt, round and square.
-      lineCap: 'round',
-      // Width of the bar line in px.
-      lineWidth: 3,
-      // Size of the pie chart in px. It will always be a square.
-      size: 110,
-      // Time in milliseconds for a eased animation of the bar growing, or false to deactivate.
-      animate: 1000,
-      // Callback function that is called at the start of any animation (only if animate is not false).
-      onStart: $.noop,
-      // Callback function that is called at the end of any animation (only if animate is not false).
-      onStop: $.noop
+// round skill bar 
+$(document).ready(function () {
+    $('#demo-pie-1').pieChart({
+        barColor: '#FF4F4F',
+        trackColor: '#1E1E24',
+        lineCap: 'round',
+        size: 150,
+        lineWidth: 10,
+        animate: {
+            duration: 1800,
+            enabled: true
+        },
+        onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+        }
     });
-    $('.updatePieCharts').on('click', function(e) {
-      e.preventDefault();
-      var newValue = Math.floor(100 * Math.random());
-      $('.chart').data('easyPieChart').update(newValue);
-      $('span', $('.chart')).text(newValue);
+    $('#demo-pie-2').pieChart({
+        barColor: '#FF4F4F',
+        trackColor: '#1E1E24',
+        lineCap: 'round',
+        size: 150,
+        lineWidth: 10,
+        animate: {
+            duration: 1800,
+            enabled: true
+        },
+        onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+        }
     });
-  });
+    $('#demo-pie-3').pieChart({
+        barColor: '#FF4F4F',
+        trackColor: '#1E1E24',
+        lineCap: 'round',
+        size: 150,
+        lineWidth: 10,
+        animate: {
+            duration: 1800,
+            enabled: true
+        },
+        onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+        }
+    });
+    $('#demo-pie-4').pieChart({
+        barColor: '#FF4F4F',
+        trackColor: '#1E1E24',
+        lineCap: 'round',
+        size: 150,
+        lineWidth: 10,
+        animate: {
+            duration: 1800,
+            enabled: true
+        },
+        onStep: function (from, to, percent) {
+            $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+        }
+    });
+});
+//end progress section

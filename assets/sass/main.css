@@ -6,7 +6,7 @@
   color: #100E17;
 }
 
-.bg-mattGray, .section-header .navbar.active, .js-section-about-do .service, .js-experience-section .js-education-details,
+.bg-mattGray, .section-header .navbar.active, .js-section-about-do .service, .skill-section .js-technical-skill .skillbar, .js-experience-section .js-education-details,
 .js-experience-section .js-experience-details {
   background-color: #1E1E24;
 }
@@ -15,7 +15,7 @@
   color: #1E1E24;
 }
 
-.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover, .skillbar {
+.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover {
   background-color: #E7E7E8;
 }
 
@@ -27,7 +27,9 @@
   background-color: #FF4F4F;
 }
 
-.text-mattGreen, .btn:hover, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i, .skillbar .skillbar-bar {
+.text-mattGreen, .btn:hover, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i, .skill-section .js-technical-skill .skillbar .skillbar-bar, .js-experience-section .js-education-details h4 a,
+.js-experience-section .js-experience-details h4 a, .js-experience-section .js-education-details .js-eduyear span,
+.js-experience-section .js-experience-details .js-eduyear span {
   color: #FF4F4F;
 }
 
@@ -83,6 +85,7 @@ body h4 {
 .image-color-overlay {
   background: rgba(0, 0, 0, 0.9);
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .section-separator {
@@ -96,6 +99,7 @@ body h4 {
   background-size: cover;
   display: block;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .section-header .navbar {
@@ -337,7 +341,7 @@ body h4 {
 }
 
 .js-section-about-do .service {
-  padding: 40px 20px;
+  padding: 25px 20px;
   display: block;
   float: left;
   -webkit-box-shadow: 0px 0px 50px black, 0px 0px 10px black;
@@ -361,7 +365,8 @@ body h4 {
 }
 
 .js-section-about-do .service h4 {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .js-section-project {
@@ -376,154 +381,91 @@ body h4 {
   margin-bottom: 2.5rem;
 }
 
-.js-section-project .js-project .card {
-  border: none;
-  background: none;
-}
-
-.js-section-project .js-project .card img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.js-section-project .js-project .card .card-body h5 {
+.js-section-project .js-project h5 {
   margin-top: 0.9375rem;
 }
 
-.js-section-project .js-project .card .card-body h4 {
+.js-section-project .js-project h4 {
   margin-top: 15px;
 }
 
-.js-section-project .js-project .card .card-body p {
+.js-section-project .js-project p {
   margin-bottom: 1.25rem;
 }
 
-.js-section-project .js-project .card .card-body .btn {
+.js-section-project .js-project .btn {
   margin-bottom: 40px;
 }
 
-.js-professional-skill ul {
-  margin: 0;
-  padding: 0;
-  list-style: None;
+.skill-section .js-technical-skill {
+  margin-right: 40px;
+}
+
+.skill-section .js-technical-skill .skillbar {
   position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  height: 14px;
+  border-radius: 30px;
+  width: 100%;
 }
 
-.js-professional-skill ul li {
-  float: left;
-}
-
-.js-professional-skill ul li .card {
-  position: relative;
-  width: 250px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1b1b1b), color-stop(#222), to(#1b1b1b));
-  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 300px;
-  border-radius: 4px;
-  text-align: center;
-  overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.js-professional-skill ul li .card:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-box-shadow: 1 15px 35px rgba(0, 0, 0, 0.5);
-          box-shadow: 1 15px 35px rgba(0, 0, 0, 0.5);
-}
-
-.js-professional-skill ul li .card:hover .percent .number h2 {
-  font-size: 30px;
+.skill-section .js-technical-skill .skillbar .skill-bar-percent {
+  position: absolute;
+  right: 5px;
+  bottom: 100%;
+  font-size: 11px;
+  height: 25px;
+  line-height: 35px;
   color: #fff;
 }
 
-.js-professional-skill ul li .card:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.03);
-  pointer-events: none;
-  z-index: 1;
+.skill-section .js-technical-skill .skillbar .skillbar-bar {
+  height: 10px;
+  width: 0px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
-.js-professional-skill ul li .card:nth-child(1) svg circle:nth-child(2) {
-  stroke: #00ff43;
+.skill-section .js-professional-skill {
+  margin-left: 40px;
 }
 
-.js-professional-skill ul li .card svg {
+.skill-section .js-professional-skill ul {
+  margin: 0;
+  padding: 0;
+  list-style: None;
+}
+
+.skill-section .js-professional-skill ul li {
+  float: left;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.skill-section .js-professional-skill ul li .pie-title-center {
+  display: inline-block;
   position: relative;
-  width: 150px;
-  height: 150px;
-  z-index: 1000;
+  text-align: center;
 }
 
-.js-professional-skill ul li .card svg circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #191919;
-  stroke-width: 10;
-  stroke-linecap: round;
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
-}
-
-.js-professional-skill ul li .card svg circle:nth-child(2) {
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
-}
-
-.js-professional-skill ul li .card .percent {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0 0 50px #000;
-          box-shadow: inset 0 0 50px #000;
-  background: #222;
-  z-index: 1000;
-}
-
-.js-professional-skill ul li .card .percent .number {
+.skill-section .js-professional-skill ul li .pie-title-center .pie-value {
+  display: block;
   position: absolute;
-  top: 0;
+  font-size: 14px;
+  height: 40px;
+  top: 50%;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-}
-
-.js-professional-skill ul li .card .percent .number h2 {
-  color: #777;
-  font-weight: 700;
-  font-size: 40px;
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
+  right: 0;
+  margin-top: -20px;
+  line-height: 40px;
 }
 
 .js-experience-section {
-  background: url("../assets/images/bg-image.jpg");
+  background: url("../images/bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -543,6 +485,24 @@ body h4 {
   margin-bottom: 30px;
 }
 
+.js-experience-section .js-education-details h4,
+.js-experience-section .js-experience-details h4 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  line-height: 26px;
+}
+
+.js-experience-section .js-education-details h4 a,
+.js-experience-section .js-experience-details h4 a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.js-experience-section .js-education-details .js-eduyear,
+.js-experience-section .js-experience-details .js-eduyear {
+  margin-bottom: 10px;
+}
+
 .js-experience-section .js-education-details {
   margin-right: 30px;
 }
@@ -550,38 +510,5 @@ body h4 {
 .js-experience-section .js-experience-details {
   margin-left: 30px;
   border-radius: 5px;
-}
-
-.progress {
-  margin-top: 50px;
-}
-
-.skillbar {
-  position: relative;
-  display: inline-block;
-  margin: 15px 0;
-  width: 100%;
-  height: 14px;
-  border-radius: 30px;
-  width: 100%;
-}
-
-.skillbar .skill-bar-percent {
-  position: absolute;
-  right: 5px;
-  bottom: 100%;
-  font-size: 11px;
-  height: 25px;
-  line-height: 35px;
-  color: #fff;
-}
-
-.skillbar .skillbar-bar {
-  height: 10px;
-  width: 0px;
-  border-radius: 50px;
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: 2px;
 }
 /*# sourceMappingURL=main.css.map */
