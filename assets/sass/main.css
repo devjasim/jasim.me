@@ -118,10 +118,14 @@ body h4 {
 }
 
 .section-header .navbar .navbar-nav li a {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s;
+  -webkit-transition: all ease-out 0.25s;
+  transition: all ease-out 0.25s;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   position: relative;
   margin: 0;
   padding: 0;
@@ -138,7 +142,7 @@ body h4 {
   transition: all ease 0.25s;
 }
 
-.section-header .navbar .navbar-nav li a:hover:after, .section-header .navbar .navbar-nav li a.active:after {
+.section-header .navbar .navbar-nav li a.active:after {
   width: 100%;
 }
 
@@ -152,7 +156,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls span.title {
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   padding: 10px 35px;
   border-radius: 50px;
   border-bottom-left-radius: 0;
@@ -160,7 +164,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls span.wrap {
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.375rem;
   padding: 10px 35px;
   border-radius: 50px;
   border-bottom-left-radius: 0;
@@ -168,7 +172,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls h2 {
   margin-top: 1.875rem;
-  font-size: 3.75rem;
+  font-size: 2.1875rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -227,9 +231,7 @@ body h4 {
   display: flex;
   margin-top: 30px;
   -webkit-animation-name: example;
-  /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s;
-  /* Safari 4.0 - 8.0 */
   -webkit-animation-name: prphoto;
           animation-name: prphoto;
   -webkit-animation: prphoto 2s linear infinite;

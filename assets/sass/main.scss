@@ -110,10 +110,14 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                 padding:20px 30px;
                 line-height:30px;
                 a{
-                    font-size:rem(18px);
+                    font-size:rem(14px);
                     font-weight:400;
                     @extend .text-fontWhite;
-                    transition:all ease $easeTime;
+                    transition:all ease-out $easeTime;
+                    -webkit-transition: all 0.2s ease-out;
+                    -moz-transition: all 0.2s ease-out;
+                    -ms-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
                     position:relative;
                     margin:0;
                     padding:0;
@@ -127,7 +131,9 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                         height:2px;
                         transition:all ease $easeTime;
                     }
-                    &:hover,
+                    &:hover{
+                        @extend .text-mattGreen;
+                    }
                     &.active{
                         @extend .text-mattGreen;
                         &:after{
@@ -154,7 +160,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         span.title{
             @extend .text-fontWhite;
             font-weight:600;
-            font-size:rem(18px);
+            font-size:rem(14px);
             @extend .bg-mattGreen;
             padding:10px 35px;
             border-radius:50px;
@@ -164,7 +170,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         span.wrap{
             @extend .text-fontWhite;
             font-weight:400;
-            font-size:rem(28px);
+            font-size:rem(22px);
             @extend .bg-mattGreen;
             padding:10px 35px;
             border-radius:50px;
@@ -172,7 +178,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         }
         h2{
             margin-top:rem(30px);
-            font-size:rem(60px);
+            font-size:rem(35px);
             font-weight:600;
             margin-bottom:10px;
         }
@@ -226,8 +232,8 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         border:20px solid rgba(0, 0, 0, 0.9);
         display:flex;
         margin-top:30px;
-        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-name: example;
+        -webkit-animation-duration: 2s; 
         animation-name: prphoto;
         animation:prphoto 2s linear infinite;
         img{
@@ -431,8 +437,6 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     }
 
 }
-
-
 
 
 
