@@ -128,8 +128,8 @@ $(document).ready(function () {
         barColor: '#FF4F4F',
         trackColor: '#1E1E24',
         lineCap: 'round',
-        size: 150,
-        lineWidth: 10,
+        size: 120,
+        lineWidth: 6,
         animate: {
             duration: 1800,
             enabled: true
@@ -142,8 +142,8 @@ $(document).ready(function () {
         barColor: '#FF4F4F',
         trackColor: '#1E1E24',
         lineCap: 'round',
-        size: 150,
-        lineWidth: 10,
+        size: 120,
+        lineWidth: 6,
         animate: {
             duration: 1800,
             enabled: true
@@ -156,8 +156,8 @@ $(document).ready(function () {
         barColor: '#FF4F4F',
         trackColor: '#1E1E24',
         lineCap: 'round',
-        size: 150,
-        lineWidth: 10,
+        size: 120,
+        lineWidth: 6,
         animate: {
             duration: 1800,
             enabled: true
@@ -170,8 +170,8 @@ $(document).ready(function () {
         barColor: '#FF4F4F',
         trackColor: '#1E1E24',
         lineCap: 'round',
-        size: 150,
-        lineWidth: 10,
+        size: 120,
+        lineWidth: 6,
         animate: {
             duration: 1800,
             enabled: true
@@ -207,11 +207,18 @@ $(document).ready(function() {
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
 
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //		$('nav').fadeIn("fast");
+    //} else {
+    //		$('nav').fadeOut("fast");
+    //}
+
     // Assign active class to nav links while scolling
     $('.jump').each(function(i) {
             if ($(this).position().top <= scrollDistance) {
-                    $('.navbar-nav a.active').removeClass('active');
-                    $('.navbar-nav a').eq(i).addClass('active');
+                    $('.nav-item a.active').removeClass('active');
+                    $('.nav-item a').eq(i).addClass('active');
             }
     });
 }).scroll();

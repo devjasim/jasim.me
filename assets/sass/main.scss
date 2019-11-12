@@ -1,3 +1,5 @@
+@import " https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap";
+
 @function rem($value) {
     @return unquote(($value/1px)/16+"rem");
 }
@@ -381,7 +383,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             margin: 15px 0;
             width: 100%;
             @extend .bg-mattGray;
-            height: 14px;
+            height: 10px;
             border-radius: 30px;
             width: 100%;
             .skill-bar-percent {
@@ -394,13 +396,13 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                 color:#fff;
               }
             .skillbar-bar {
-                height: 10px;
+                height: 8px;
                 width: 0px;
                 @extend .text-mattGreen;
                 border-radius: 50px;
                 display: inline-block;
-                margin-top:2px;
-                margin-left:2px;
+                margin-top:1px;
+                margin-left:1px;
               }
           }
     }
