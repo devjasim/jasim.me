@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 .bg-mattBlack, body {
   background-color: #100E17;
 }
@@ -74,6 +75,11 @@ body h4 {
 .btn:hover {
   background: none;
   border: 1px solid #FF4F4F;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .wrapper {
@@ -512,5 +518,69 @@ body h4 {
 .js-experience-section .js-experience-details {
   margin-left: 30px;
   border-radius: 5px;
+}
+
+.js-portfolio-section .button-group {
+  margin: 40px 0;
+}
+
+.js-portfolio-section .button-group .btn {
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.js-portfolio-section .button-group .btn:focus {
+  background: none;
+}
+
+.js-portfolio-section .grid-item {
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.js-portfolio-section .grid-item:hover {
+  cursor: pointer;
+}
+
+.js-portfolio-section .grid-item img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.js-portfolio-section .grid-item .img_cnt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(14, 14, 17, 0.6);
+  width: 100%;
+}
+
+.js-portfolio-section .grid-item .img_cnt .cnt {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50);
+  -webkit-transform: translateY(-50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.js-portfolio-section .grid-item .img_cnt .cnt li {
+  display: block;
+}
+
+.js-portfolio-section .grid-item .img_cnt .cnt li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
