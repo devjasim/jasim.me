@@ -1,0 +1,26 @@
+@media only screen and (max-width:1024px){
+    .skill-section .js-professional-skill{
+        margin-left:0;
+    }
+}
+@media only screen and (min-width:768.99px){
+    .menu-button{
+        displaY:none;
+    }
+}
+@media only screen and (max-width:768px){
+    .navbar-nav{
+        flex-direction:inherit;
+        display:none;
+    }
+    .navbar-nav ul li:first-child{
+        padding-left:0;
+    }
+    .navbar-nav ul li:last-child{
+        padding-right:0;
+    }
+    .navbar-nav.active{
+        display:block !important;
+        transition:.5s all ease;
+    }
+}

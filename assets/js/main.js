@@ -237,4 +237,10 @@ $(document).ready(function(){
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
 	});
+});
+
+$(document).ready(function(){
+    $('.menu-button').click(function(){
+        $('.navbar-nav').toggleClass('active');
+    })
 })
