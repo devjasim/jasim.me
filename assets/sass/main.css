@@ -90,8 +90,7 @@ body h4 {
 
 .image-color-overlay {
   background: rgba(0, 0, 0, 0.9);
-  min-height: 100vh;
-  overflow: hidden;
+  display: block;
 }
 
 .section-separator {
@@ -104,28 +103,44 @@ body h4 {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .section-header .navbar {
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
   margin-top: 10px;
+  text-align: center;
+  padding: .5rem 0;
   margin: auto;
 }
 
 .section-header .navbar.active {
   margin-top: 0;
+  padding: 0 1rem;
+}
+
+.section-header .navbar .navbar-nav {
+  display: block;
+  margin: 0 auto;
 }
 
 .section-header .navbar .navbar-nav li {
   padding: 20px 30px;
   line-height: 30px;
+  display: inline-block;
+}
+
+.section-header .navbar .navbar-nav li:first-child {
+  padding-left: 0;
+}
+
+.section-header .navbar .navbar-nav li:last-child {
+  padding-right: 0;
 }
 
 .section-header .navbar .navbar-nav li a {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
@@ -153,12 +168,25 @@ body h4 {
   width: 100%;
 }
 
+.js-section-home {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+
+.js-section-home canvas {
+  left: auto !important;
+  top: auto !important;
+}
+
 .js-section-home .padding-home {
   padding: 180px 0;
+  overflow: hidden;
 }
 
 .js-section-home .js-personal-dtls {
   margin-top: 6.25rem;
+  display: block;
 }
 
 .js-section-home .js-personal-dtls span.title {
@@ -171,7 +199,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls span.wrap {
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   padding: 10px 35px;
   border-radius: 50px;
   border-bottom-left-radius: 0;
@@ -193,10 +221,12 @@ body h4 {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: block;
 }
 
 .js-section-home .js-personal-dtls ul li {
   padding: 10px 0;
+  display: inline-block;
 }
 
 .js-section-home .js-personal-dtls ul li a {
@@ -236,59 +266,26 @@ body h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 60px;
   -webkit-animation-name: example;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: prphoto;
           animation-name: prphoto;
   -webkit-animation: prphoto 2s linear infinite;
           animation: prphoto 2s linear infinite;
-  /* Standard syntax */
 }
 
 .js-section-home .js-profile-img img {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 20px solid rgba(0, 0, 0, 0.3);
+  border: 20px solid rgba(0, 0, 0, 0.18);
 }
 
-@-webkit-keyframes prphoto {
-  0% {
-    -webkit-box-shadow: 0 0 0px #f58115;
-            box-shadow: 0 0 0px #f58115;
-  }
-  25% {
-    -webkit-box-shadow: 0 0 50px #f58115;
-            box-shadow: 0 0 50px #f58115;
-  }
-  50% {
-    -webkit-box-shadow: 0 0 50px #f8261f;
-            box-shadow: 0 0 50px #f8261f;
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0px #ed8207;
-            box-shadow: 0 0 0px #ed8207;
-  }
-}
-
-@keyframes prphoto {
-  0% {
-    -webkit-box-shadow: 0 0 0px #f58115;
-            box-shadow: 0 0 0px #f58115;
-  }
-  25% {
-    -webkit-box-shadow: 0 0 50px #f58115;
-            box-shadow: 0 0 50px #f58115;
-  }
-  50% {
-    -webkit-box-shadow: 0 0 50px #f8261f;
-            box-shadow: 0 0 50px #f8261f;
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0px #ed8207;
-            box-shadow: 0 0 0px #ed8207;
-  }
+.section-about {
+  width: 100%;
+  float: left;
+  display: block;
 }
 
 .section-about .about-image {
@@ -326,12 +323,12 @@ body h4 {
   padding: 0;
   list-style: none;
   margin-top: 20px;
-  display: inline-block;
+  display: block;
 }
 
 .section-about .js-about-knowladge .know-menu li {
-  float: left;
   padding: 10px;
+  display: inline-block;
 }
 
 .section-about .js-about-knowladge .know-menu li span {
@@ -407,7 +404,7 @@ body h4 {
 }
 
 .skill-section .js-technical-skill {
-  margin-right: 40px;
+  margin-right: 80px;
 }
 
 .skill-section .js-technical-skill .skillbar {
@@ -440,7 +437,8 @@ body h4 {
 }
 
 .skill-section .js-professional-skill {
-  margin-left: 40px;
+  margin-left: 100px;
+  margin-right: 40px;
 }
 
 .skill-section .js-professional-skill ul {

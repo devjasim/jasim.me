@@ -82,8 +82,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 }
 .image-color-overlay{
     background:rgba(0, 0, 0, 0.9);
-    min-height:100vh;
-    overflow:hidden;
+    display:block;
 }
 .section-separator{
     padding-top:rem(100px);
@@ -95,8 +94,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     background-repeat:no-repeat;
     background-size:cover;
     display:block;
-    min-height:100vh;
-    overflow:hidden;
+    height:100%;
 }
 
 .section-header{
@@ -106,17 +104,29 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         -o-transition: all ease-out $easeTime;
         transition: all ease-out $easeTime;
         margin-top:10px;
+        text-align:center;
+        padding:.5rem 0;
         margin:auto;
         &.active{
             @extend .bg-mattGray;
             margin-top:0;
+            padding:0 1rem;
         }
         .navbar-nav{
+            display:block;
+            margin:0 auto;
             li{
                 padding:20px 30px;
                 line-height:30px;
+                display:inline-block;
+                &:first-child{
+                    padding-left:0;
+                }
+                &:last-child{
+                    padding-right:0;
+                }
                 a{
-                    font-size:rem(14px);
+                    font-size:rem(15px);
                     font-weight:400;
                     @extend .text-fontWhite;
                     transition:all ease-out $easeTime;
@@ -157,12 +167,21 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 
 // start section home 
 .js-section-home{
-   
+    width:100%;
+    display:block;
+    min-height:100vh;
+    canvas{
+        left:auto !important;
+        top:auto !important;
+
+    }
     .padding-home{
         padding:180px 0;
+        overflow:hidden;
     }
     .js-personal-dtls{
         margin-top:rem(100px);
+        display:block;
         span.title{
             @extend .text-fontWhite;
             font-weight:600;
@@ -176,7 +195,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         span.wrap{
             @extend .text-fontWhite;
             font-weight:400;
-            font-size:rem(22px);
+            font-size:rem(18px);
             @extend .bg-mattGreen;
             padding:10px 35px;
             border-radius:50px;
@@ -196,8 +215,10 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             margin:0;
             padding:0;
             list-style:none;
+            display:block;
             li{
                 padding: 10px 0;
+                display:inline-block;
                 
                 a{
                     text-decoration:none;
@@ -237,7 +258,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         margin: 0 auto;
         border:20px solid rgba(0, 0, 0, 0.9);
         display:flex;
-        margin-top:30px;
+        margin-top:60px;
         -webkit-animation-name: example;
         -webkit-animation-duration: 2s; 
         animation-name: prphoto;
@@ -246,23 +267,24 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             width:100%;
             height:auto;
             border-radius:50%;
-            border:20px solid rgba(0, 0, 0, 0.3);
+            // border:20px solid rgba(0, 0, 0, 0.3);
+            border:20px solid rgba(0, 0, 0, 0.18)
         }
 
-        @-webkit-keyframes prphoto {
-            0%   {box-shadow:0 0 0px rgb(245, 129, 21);}
-            25%  {box-shadow:0 0 50px rgb(245, 129, 21);}
-            50%  {box-shadow:0 0 50px rgb(248, 38, 31);}
-            100% {box-shadow:0 0 0px rgb(237, 130, 7);}
-          }
+        // @-webkit-keyframes prphoto {
+        //     0%   {box-shadow:0 0 0px rgb(245, 129, 21);}
+        //     25%  {box-shadow:0 0 50px rgb(245, 129, 21);}
+        //     50%  {box-shadow:0 0 50px rgb(248, 38, 31);}
+        //     100% {box-shadow:0 0 0px rgb(237, 130, 7);}
+        //   }
           
-          /* Standard syntax */
-          @keyframes prphoto {
-            0%   {box-shadow:0 0 0px rgb(245, 129, 21);}
-            25%  {box-shadow:0 0 50px rgb(245, 129, 21);}
-            50%  {box-shadow:0 0 50px rgb(248, 38, 31);}
-            100% {box-shadow:0 0 0px rgb(237, 130, 7);}
-          }
+        //   /* Standard syntax */
+        //   @keyframes prphoto {
+        //     0%   {box-shadow:0 0 0px rgb(245, 129, 21);}
+        //     25%  {box-shadow:0 0 50px rgb(245, 129, 21);}
+        //     50%  {box-shadow:0 0 50px rgb(248, 38, 31);}
+        //     100% {box-shadow:0 0 0px rgb(237, 130, 7);}
+        //   }
     }
 }
 // end section home 
@@ -270,6 +292,9 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 
 // section about start
 .section-about{
+    width:100%;
+    float:left;
+    display:block;
     .about-image{
         width:100%;
         height:auto;
@@ -298,10 +323,10 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             padding:0;
             list-style:none;
             margin-top:20px;
-            display:inline-block;
+            display:block;
             li{
-                float:left;
                 padding:10px;
+                display:inline-block;
                 span{
                     border:1px solid #FF4F4F;
                     padding:5px 10px;
@@ -380,7 +405,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 
 .skill-section{
     .js-technical-skill{
-        margin-right:40px;
+        margin-right:80px;
         .skillbar {
             position: relative;
             display: inline-block;
@@ -411,7 +436,8 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
           }
     }
     .js-professional-skill{
-        margin-left:40px;
+        margin-left:100px;
+        margin-right:40px;
         ul{
             margin:0;
             padding:0;

@@ -1,26 +1,103 @@
+@media only screen and (max-width:1200px){
+    .skill-section .js-professional-skill{
+        margin:0;
+    }
+    .skill-section .js-technical-skill{
+        margin-right:0;
+    }
+}
+
+
 @media only screen and (max-width:1024px){
     .skill-section .js-professional-skill{
         margin-left:0;
     }
 }
+
+
 @media only screen and (min-width:768.99px){
     .menu-button{
         displaY:none;
     }
-}
-@media only screen and (max-width:768px){
-    .navbar-nav{
-        flex-direction:inherit;
+    .js-section-home .js-img-1{
         display:none;
     }
-    .navbar-nav ul li:first-child{
-        padding-left:0;
+}
+
+
+@media only screen and (max-width:767.99px){
+    .js-section-home .js-img-1{
+        display:block;
     }
-    .navbar-nav ul li:last-child{
-        padding-right:0;
+    .js-section-home .js-img-2{
+        display:none;
     }
-    .navbar-nav.active{
+    .section-separator{
+        padding-top:3.25rem;
+        padding-bottom:3.25rem;
+    }
+    .section-header .navbar{
+        padding:.5rem 1rem;
+    }
+    .section-header .navbar-nav{
+        flex-direction:inherit;
+        display:none !important;
+    }
+    .section-header .navbar-nav.active{
         display:block !important;
         transition:.5s all ease;
+    }
+    .js-section-home .padding-home{
+        padding:0;
+        padding-bottom:40px;
+    }
+    .section-about .js-about-knowladge h2{
+        margin-top:40px;
+    }
+    .js-section-about-do .service{
+        margin-bottom:20px;
+    }
+    .section-about .js-about-knowladge{
+        margin-left:0;
+    }
+    .js-experience-section .js-education-details{
+        margin-right:0;
+    }
+    .js-experience-section .js-wexperience h2{
+        margin-left:0 !important;
+        margin-top:40px;
+    }
+    .js-experience-section .js-experience-details{
+        margin-left:0;
+    }
+    .skill-section .js-professional-skill h2{
+        margin-top:40px;
+    }
+}
+
+
+@media only screen and (max-width:568px){
+    .section-separator{
+        padding-top:2.25rem;
+        padding-bottom:2.25rem;
+    }
+    .js-section-home .js-personal-dtls{
+        text-align:center;
+    }
+    .section-about .js-about-knowladge{
+        text-align:center;
+    }
+    .js-experience-section h2{
+        text-align:center;
+    }
+}
+
+
+@media only screen and (max-width:360px){
+    .skill-section .js-professional-skill ul li:first-child{
+        padding-left:0;
+    }
+    .skill-section .js-professional-skill ul li:last-child{
+        padding-right:0;
     }
 }
