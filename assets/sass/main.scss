@@ -83,6 +83,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
 .image-color-overlay{
     background:rgba(0, 0, 0, 0.9);
     display:block;
+    min-height:100vh;
 }
 .section-separator{
     padding-top:rem(100px);
@@ -396,6 +397,10 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         .btn{
             margin-bottom:40px;
         }
+
+        .owl-nav{
+            text-align:center;
+        }
     }
 }
 
@@ -448,12 +453,12 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                 display:inline-block;
                 margin-bottom:30px;
                 &:first-child{
-                    padding-left:30px;
+                    padding-left:5px;
                     float:left;
                 }
                 &:last-child{
                     float:right;
-                    padding-right:30px;
+                    padding-right:5px;
                 }
                 .pie-title-center {
                     display: inline-block;
@@ -553,9 +558,16 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         position:relative;
         margin-bottom:30px;
         border-radius:10px;
+        transition:.5s all ease;
         &:hover{
             cursor:pointer;
+            transition:.5s all ease;
         }
+        &:hover .img_cnt{
+            opacity:1;
+            transition:.5s all ease;
+        }
+
         img{
             display: block;
             max-width: 100%;
@@ -567,8 +579,11 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             right:0;
             left:0;
             bottom:0;
-            background:rgba(14,14,17,.6);
+            background:rgba(255, 79, 79, 0.87);
             width:100%;
+            opacity:0;
+            border-radius:10px;
+            transition:.5s all ease;
             .cnt{
                 list-style:none;
                 position:absolute;
@@ -593,4 +608,10 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         
     }
 }
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
 //start portfolio section

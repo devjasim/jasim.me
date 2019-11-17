@@ -91,6 +91,7 @@ body h4 {
 .image-color-overlay {
   background: rgba(0, 0, 0, 0.9);
   display: block;
+  min-height: 100vh;
 }
 
 .section-separator {
@@ -403,6 +404,10 @@ body h4 {
   margin-bottom: 40px;
 }
 
+.js-section-project .js-project .owl-nav {
+  text-align: center;
+}
+
 .skill-section .js-technical-skill {
   margin-right: 80px;
 }
@@ -455,13 +460,13 @@ body h4 {
 }
 
 .skill-section .js-professional-skill ul li:first-child {
-  padding-left: 30px;
+  padding-left: 5px;
   float: left;
 }
 
 .skill-section .js-professional-skill ul li:last-child {
   float: right;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 
 .skill-section .js-professional-skill ul li .pie-title-center {
@@ -549,10 +554,20 @@ body h4 {
   position: relative;
   margin-bottom: 30px;
   border-radius: 10px;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
 }
 
 .js-portfolio-section .grid-item:hover {
   cursor: pointer;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+.js-portfolio-section .grid-item:hover .img_cnt {
+  opacity: 1;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
 }
 
 .js-portfolio-section .grid-item img {
@@ -567,8 +582,12 @@ body h4 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(14, 14, 17, 0.6);
+  background: rgba(255, 79, 79, 0.87);
   width: 100%;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
 }
 
 .js-portfolio-section .grid-item .img_cnt .cnt {
@@ -592,5 +611,12 @@ body h4 {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 /*# sourceMappingURL=main.css.map */
