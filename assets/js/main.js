@@ -2,9 +2,9 @@
 $(function(){
     $(window).on("scroll", function(){
         if($(window).scrollTop() > 50){
-            $(".navbar").addClass("active");
+            $(".navbar").addClass("block");
         }else{
-            $(".navbar").removeClass("active");
+            $(".navbar").removeClass("block");
         }
     });
 });
@@ -198,7 +198,7 @@ $(document).ready(function() {
             // perform animated scrolling by getting top-position of target-element and set it as scroll target
             $('html, body').stop().animate({
                     scrollTop: $(target).offset().top
-            }, 1000, function() {
+            }, 1500, function() {
                     location.hash = target; //attach the hash (#jumptarget) to the pageurl
             });
 
@@ -218,7 +218,7 @@ $(window).scroll(function() {
 
     // Assign active class to nav links while scolling
     $('.jump').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
+            if ($(this).position().top <= scrollDistance +40) {
                     $('.nav-item a.active').removeClass('active');
                     $('.nav-item a').eq(i).addClass('active');
             }
@@ -246,3 +246,14 @@ $(document).ready(function(){
         $('.navbar-nav').toggleClass('active');
     })
 })
+
+
+// scrolling animation 
+$(document).ready(function(){
+    var options = {
+        animateThreshold: 100,
+        scrollPollInterval: 50
+    }
+    $('.aniview').AniView(options);
+})
+// scrolling animation 

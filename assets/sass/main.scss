@@ -108,7 +108,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         text-align:center;
         padding:.5rem 0;
         margin:auto;
-        &.active{
+        &.block{
             @extend .bg-mattGray;
             margin-top:0;
             padding:0 1rem;

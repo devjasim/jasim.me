@@ -7,7 +7,7 @@
   color: #100E17;
 }
 
-.bg-mattGray, .section-header .navbar.active, .js-section-about-do .service, .skill-section .js-technical-skill .skillbar, .js-experience-section .js-education-details,
+.bg-mattGray, .section-header .navbar.block, .js-section-about-do .service, .skill-section .js-technical-skill .skillbar, .js-experience-section .js-education-details,
 .js-experience-section .js-experience-details {
   background-color: #1E1E24;
 }
@@ -116,7 +116,7 @@ body h4 {
   margin: auto;
 }
 
-.section-header .navbar.active {
+.section-header .navbar.block {
   margin-top: 0;
   padding: 0 1rem;
 }
