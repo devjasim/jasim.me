@@ -252,7 +252,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     var options = {
         animateThreshold: 100,
-        scrollPollInterval: 50
+        scrollPollInterval: 100
     }
     $('.aniview').AniView(options);
 })
