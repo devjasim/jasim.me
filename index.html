@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/sass/main.css">
-    <link rel="stylesheet" href="assets/sass/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Jasim Saif</title>
 </head>
 
 <body>
 
     <div class="wrapper">
-        <!--==============
-        HEADER MENU    
-        ===============-->
+        <!--=====================HEADER MENU======================-->
         <section class="section-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="menu-button">
+                            <span class="responsive-menu"><i class="fas fa-grip-horizontal"></i></span>
+                        </div>
                         <nav class="navbar fixed-top">
-                            <div class="menu-button">
-                                <span class="responsive-menu"><i class="fas fa-grip-horizontal"></i></span>
-                            </div>
-                            <div class="navbar justify-content-center" id="">
+                            <div class="js-menu justify-content-center" id="">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link" href="#jsHome">Home <span class="sr-only">(current)</span></a>
@@ -58,32 +56,28 @@
                 </div>
             </div>
         </section>
-        <!--==============
-            HEADER MENU    
-        ===============-->
+        <!--=====================HEADER MENU======================-->
 
 
 
-        <!--==============
-            HOME SECTION    
-        ===============-->
+        <!--=====================HOME SECTION=====================-->
 
         <section class="js-section-home image-bg-one jump" id="jsHome">
             <div class="image-color-overlay">
                 <div class="container">
                     <div class="row section-separator  padding-home">
                         <div class="col-md-6 js-img-1">
-                            <div class="js-profile-img animated fadeIn">
+                            <div class="js-profile-img aniview" data-av-animation="fadeInUp">
                                 <img src="assets/images/js-profile.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="js-personal-dtls aniview" data-av-animation="slideInRight">
+                            <div class="js-personal-dtls aniview" data-av-animation="fadeInUp">
                                 <span class="title">Hello I'm</span>
                                 <h2>M. Jasim Saif</h2>
                                 <a class="typewrite" data-perion="2000" data-type='[ "creative", " passionate", " knowledge-thirsty minded"]'></a>
 
-                                <h4 class="mt-5">Front End Developer</h4>
+                                <h4 class="mt-3">Front End Developer</h4>
                                 <ul class="contact-menu">
                                     <li>
                                         <a href="#">
@@ -135,7 +129,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 js-img-2">
-                            <div class="js-profile-img">
+                            <div class="js-profile-img aniview" data-av-animation="fadeInRight">
                                 <img src="assets/images/js-profile.jpg" alt="">
                             </div>
                         </div>
@@ -144,30 +138,26 @@
             </div>
         </section>
 
-        <!--==============
-            HOME SECTION    
-        ===============-->
+        <!--====================HOME SECTION======================-->
 
 
-        <!--==============
-            ABOUT SECTION    
-        ===============-->
+        <!--====================ABOUT SECTION=====================-->
 
         <section class="section-about jump" id="jsAbout">
             <div class="container">
                 <div class="row section-separator">
                     <div class="col-md-6">
-                        <div class="about-image w-100 display-block">
+                        <div class="about-image w-100 display-block aniview" data-av-animation="fadeInLeft">
                             <img src="assets/images/about_me.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="js-about-knowladge">
-                            <h2>About me</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae, adipisci, corporis
-                                suscipit distinctio amet deleniti, sint architecto non quidem delectus. Magni ipsa et atque
+                            <h2 class="aniview" data-av-animation="fadeInDown">About me</h2>
+                            <p class="aniview" data-av-animation="fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae, adipisci, corporis
+                                suscipit distinctio amet deleniti, sint zarchitecto non quidem delectus. Magni ipsa et atque
                                 commodi, labore dolore! Debitis, molestias.</p>
-                            <ul class="know-menu">
+                            <ul class="know-menu aniview" data-av-animation="fadeInUp">
                                 <li><span class="text">PHP</span></li>
                                 <li><span class="text">React</span></li>
                                 <li><span class="text">JavaScript</span></li>
@@ -177,22 +167,18 @@
                                 <li><span class="text">SASS</span></li>
                                 <li><span class="text">Bootstrap4</span></li>
                             </ul>
-                            <a href="#" class="btn">Download Resume<i class="fas fa-download"></i></a>
+                            <a href="#" class="btn aniview" data-av-animation="fadeInUp">Download Resume<i class="fas fa-download"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--==============
-            ABOUT SECTION    
-        ===============-->
+        <!--====================ABOUT SECTION=====================-->
 
 
 
-        <!--==============
-            SERVICE SECTION    
-        ===============-->
+        <!--===================SERVICE SECTION====================-->
 
         <section class="js-section-about-do">
             <div class="container">
@@ -201,7 +187,7 @@
                         <h2>What I do</h2>
                     </div>
                     <div class="col-md-4">
-                        <div class="service">
+                        <div class="service aniview" data-av-animation="fadeInLeft">
                             <span><i class="fas fa-bullseye sky-blue"></i></span>
                             <h4>Web Design</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat est laudantium
@@ -209,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="service">
+                        <div class="service aniview" data-av-animation="fadeInUp">
                             <span><i class="far fa-file-code pink"></i></span>
                             <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat est laudantium
@@ -217,7 +203,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="service">
+                        <div class="service aniview" data-av-animation="fadeInRight">
                             <span><i class="far fa-object-group green"></i></span>
                             <h4>Material Design</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat est laudantium
@@ -228,15 +214,11 @@
             </div>
         </section>
 
-        <!--==============
-            SERVICE SECTION    
-        ===============-->
+        <!--===================SERVICE SECTION====================-->
 
 
 
-        <!--==============
-            PROJECT SECTION    
-        ===============-->
+        <!--===================PROJECT SECTION====================-->
 
         <section class="js-section-project jump" id="jsProject">
             <div class="image-color-overlay">
@@ -284,20 +266,16 @@
             </div>
         </section>
 
-        <!--==============
-            PROJECT SECTION    
-        ===============-->
+        <!--===================PROJECT SECTION====================-->
 
 
-        <!--==============
-            SKILL SECTION    
-        ===============-->
+        <!--====================SKILL SECTION=====================-->
         <section class="skill-section jump"  id="jsSkills">
             <div class="container">
                 <div class="row section-separator">
                     <div class="col-md-6">
                         <div class="js-technical-skill">
-                            <h2 class="text-center">Technical Skill</h2>
+                            <h2 class="text-center aniview" data-av-animation="fadeInUp">Technical Skill</h2>
                             <div class="js-technical-details mt-5">
                                 <div class="bar">
                                     <strong>HTML5</strong>
@@ -353,7 +331,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="js-professional-skill text-center">
-                            <h2>Professional Skill</h2>
+                            <h2 class="text-center aniview" data-av-animation="fadeInUp">Professional Skill</h2>
                             <div class="js-pro-details mt-5 ">
                                 <ul>
                                     <li>
@@ -389,14 +367,10 @@
                 </div>
             </div>
         </section>
-        <!--==============
-            SKILL SECTION    
-        ===============-->
+        <!--====================SKILL SECTION=====================-->
 
 
-        <!--==============
-            EXPERIENCE SECTION    
-        ===============-->
+        <!--====================EXPERIENCE SECTION=====================-->
         <section class="js-experience-section jump" id="jsExperience">
             <div class="image-color-overlay">
                 <div class="container">
@@ -469,14 +443,10 @@
                 </div>
             </div>
         </section>
-        <!--==============
-            EXPERIENCE SECTION    
-        ===============-->
+        <!--===================EXPERIENCE SECTION======================-->
 
 
-        <!--==============
-            PORTFOLIO SECTION    
-        ===============-->
+        <!--====================PORTFOLIO SECTION=====================-->
         <section class="js-portfolio-section jump" id="jsPortfolio">
             <div class="container">
                 <div class="row section-separator">
@@ -604,14 +574,10 @@
                 </div>
             </div>
         </section>
-        <!--==============
-            PORTFOLIO SECTION    
-        ===============-->
+        <!--===================PORTFOLIO SECTION======================-->
         
 
-        <!--==============
-            PRICING SECTION    
-        ===============-->
+        <!--======================PRICING SECTION=====================-->
         <div class="js-pricing-section">
             <div class="container">
                 <div class="row section-separator">
@@ -671,9 +637,70 @@
                 </div>
             </div>
         </div>
-        <!--==============
-            PRICING SECTION    
-        ===============-->
+        <!--====================PRICING SECTION=======================-->
+
+
+        <!--======================CONTACT SECTION=====================-->
+        <div class="js-pricing-section">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-md-12">
+                        <div class="headeing">
+                            <h2 class="text-center">Pricing Table</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="js-price-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4>Full time work</h4>
+                            <p>I'm available for full time work</p>
+                            <h5>$300</h5>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Web Development</li>
+                                <li>Responsive Design</li>
+                                <li>Template Design</li>
+                                <li>PSD to HTML5</li>
+                            </ul>
+                            <a class="btn btn-primary" href="#">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="js-price-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Full time work</h4>
+                            <p>I'm available for full time work</p>
+                            <h5>$300</h5>
+                            <ul>
+                                <li>Web Design</li> 
+                                <li>Web Development</li>
+                                <li>Responsive Design</li>
+                                <li>Template Design</li>
+                                <li>PSD to HTML5</li>
+                            </ul>
+                            <a class="btn btn-primary" href="#">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="js-price-card">
+                            <i class="fas fa-hourglass-half"></i>
+                            <h4>Full time work</h4>
+                            <p>I'm available for full time work</p>
+                            <h5>$300</h5>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Web Development</li>
+                                <li>Responsive Design</li>
+                                <li>Template Design</li>
+                                <li>PSD to HTML5</li>
+                            </ul>
+                            <a class="btn btn-primary" href="#">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================CONTACT SECTION=======================-->
     </div>
 
 

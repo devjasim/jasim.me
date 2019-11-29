@@ -31,10 +31,10 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = "<span class='wrap'>I'm " +this.txt+'</span>';
+    this.el.innerHTML = "<span class='wrap'>I'm " +this.txt+ " | " + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 100 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -44,7 +44,7 @@ TxtType.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
-    delta = 500;
+    delta = 800;
     }
 
     setTimeout(function() {
@@ -243,7 +243,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.menu-button').click(function(){
-        $('.navbar-nav').toggleClass('active');
+        $('.navbar').toggleClass('active');
+        console.log(clicked)
     })
 })
 
@@ -252,8 +253,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     var options = {
         animateThreshold: 100,
-        scrollPollInterval: 50
+        scrollPollInterval: 100
     }
-    $('.aniview').AniView(options);
+    $('.aniview').animate(options);
 })
 // scrolling animation 

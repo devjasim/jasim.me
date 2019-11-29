@@ -17,7 +17,7 @@
 
 @media only screen and (min-width:768.99px){
     .menu-button{
-        displaY:none;
+        display:none;
     }
     .js-section-home .js-img-1{
         display:none;
@@ -36,16 +36,50 @@
         padding-top:3.25rem;
         padding-bottom:3.25rem;
     }
+    .section-header{
+        position:relative;
+    }
     .section-header .navbar{
-        padding:.5rem 1rem;
-    }
-    .section-header .navbar-nav{
+        display:inline-block;
+        width:165px;
+        margin:0;
         flex-direction:inherit;
-        display:none !important;
+        transform:translateX(-1000px);
+        transition:.5s all ease-in-out;
     }
-    .section-header .navbar-nav.active{
-        display:block !important;
-        transition:.5s all ease;
+    .section-header .navbar.active{
+        transform:translateX(0);
+        transition:.5s all ease-in-out;
+        background:#1E1E24 !important;
+    }
+    .section-header .navbar.block{
+        background:none;
+        padding:0 !important;
+        margin:0;
+    }
+    .section-header .menu-button{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:2000;
+        padding:15px 20px;
+    }
+    .section-header .menu-button span>i{
+        font-size:30px;
+    }
+    .section-header .navbar .js-menu{
+        float:left;
+        margin-left:0;
+        padding:0;
+        margin:0;
+    }
+    .section-header .navbar .navbar-nav{
+        margin-top:25px;
+    }
+    .section-header .navbar-nav li{
+        float:none;
+        display:flex !important;
+        padding: 10px 45px !important
     }
     .js-section-home .padding-home{
         padding:0;

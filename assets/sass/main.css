@@ -24,7 +24,7 @@
   color: #E7E7E8;
 }
 
-.bg-mattGreen, .btn, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap {
+.bg-mattGreen, .btn, .section-header .navbar .navbar-nav li a:after, .js-section-home .js-personal-dtls span.title {
   background-color: #FF4F4F;
 }
 
@@ -47,7 +47,7 @@ body p {
 }
 
 body h2 {
-  font-size: 2rem;
+  font-size: 1.875rem;
   font-weight: 600;
 }
 
@@ -119,6 +119,13 @@ body h4 {
 .section-header .navbar.block {
   margin-top: 0;
   padding: 0 1rem;
+}
+
+.section-header .navbar .js-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-header .navbar .navbar-nav {
@@ -200,21 +207,19 @@ body h4 {
 
 .js-section-home .js-personal-dtls span.wrap {
   font-weight: 400;
-  font-size: 1.125rem;
-  padding: 10px 35px;
-  border-radius: 50px;
-  border-bottom-left-radius: 0;
+  font-size: 1.875rem;
+  background: none;
 }
 
 .js-section-home .js-personal-dtls h2 {
   margin-top: 1.875rem;
-  font-size: 2.1875rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .js-section-home .js-personal-dtls h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
