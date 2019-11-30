@@ -398,9 +398,29 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         .btn{
             margin-bottom:40px;
         }
-
-        .owl-nav{
-            text-align:center;
+        .owl-carousel{
+            .owl-nav{
+                text-align:center;
+                button span{
+                    display:none;
+                }
+                button{
+                    width:15px; 
+                    height:15px;
+                    @extend .bg-mattGreen;
+                    margin:0 10px;
+                    border-radius:50px;
+                    &:focus,
+                    &:active{
+                        outline:none;
+                        background:none;
+                        border:1px solid #FF4F4F;
+                    }
+                }
+            }
+            .owl-dots{
+                display:none;
+            }
         }
     }
 }
@@ -609,6 +629,49 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         
     }
 }
+
+
+
+// start pricing section
+.js-pricing-section{
+    display:flex;
+    text-align:center;
+    .heading{
+        width:100%;
+        margin-bottom:rem(55px);
+    }
+    .js-price-card{
+        width:100%;
+        @extend .bg-mattGray;
+        padding:30px 0;
+        box-shadow:$boxShadow;
+        i{
+            font-size:rem(30px);
+            @extend .text-mattGreen;
+        }
+        h4{
+            margin-top:rem(30px);
+        }
+        h5{
+            font-size:rem(35px);
+            @extend .text-mattGreen;
+            margin-bottom:15px;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style:none;
+            li{
+                padding:5px 0;
+                font-size:14px;
+            }
+        }
+        a.btn-primary{
+            padding:8px 25px;
+        }
+    }
+} 
+// end pricing section 
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

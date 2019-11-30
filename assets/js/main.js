@@ -69,7 +69,7 @@ window.onload = function() {
 
 
 $(".owl-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     lazyLoad: true,
     loop: true,
     margin: 20,
@@ -77,22 +77,18 @@ $(".owl-carousel").owlCarousel({
     // animateIn: 'fadeIn',
     responsiveClass: true,
     autoHeight: true,
-    autoplayTimeout: 5000,
-    smartSpeed: 2000,
+    // autoplayTimeout: 5000,
+    // smartSpeed: 2000,
     nav: true,
     responsive:{
         0:{
             items:1,
-            nav:true
         },
         600:{
             items:1,
-            nav:true
         },
         1000:{
             items:2,
-            nav:true,
-            loop:true
         }
     }
 });
@@ -125,7 +121,6 @@ $('.skillbar').skillBars({
 });
 
 // round skill bar 
-$(document).ready(function () {
     $('#demo-pie-1').pieChart({
         barColor: '#FF4F4F',
         trackColor: '#1E1E24',
@@ -182,7 +177,6 @@ $(document).ready(function () {
             $(this.element).find('.pie-value').text(Math.round(percent) + '%');
         }
     });
-});
 //end progress section
 
 
@@ -209,13 +203,6 @@ $(document).ready(function() {
 $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
 
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
-
     // Assign active class to nav links while scolling
     $('.jump').each(function(i) {
             if ($(this).position().top <= scrollDistance +40) {
@@ -224,6 +211,9 @@ $(window).scroll(function() {
             }
     });
 }).scroll();
+
+
+
 
 
 $(document).ready(function(){
