@@ -8,7 +8,7 @@
 }
 
 .bg-mattGray, .section-header .navbar.block, .js-section-about-do .service, .skill-section .js-technical-skill .skillbar, .js-experience-section .js-education-details,
-.js-experience-section .js-experience-details, .js-pricing-section .js-price-card {
+.js-experience-section .js-experience-details, .js-pricing-section .js-price-card, .js-feature_post-section .image-color-overlay .js-post-card .card {
   background-color: #1E1E24;
 }
 
@@ -20,7 +20,7 @@
   background-color: #E7E7E8;
 }
 
-.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a {
+.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a {
   color: #E7E7E8;
 }
 
@@ -30,7 +30,7 @@
 
 .text-mattGreen, .btn:hover, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i, .skill-section .js-technical-skill .skillbar .skillbar-bar, .js-experience-section .js-education-details h4 a,
 .js-experience-section .js-experience-details h4 a, .js-experience-section .js-education-details .js-eduyear span,
-.js-experience-section .js-experience-details .js-eduyear span, .js-pricing-section .js-price-card i, .js-pricing-section .js-price-card h5 {
+.js-experience-section .js-experience-details .js-eduyear span, .js-pricing-section .js-price-card i, .js-pricing-section .js-price-card h5, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a:hover, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body a {
   color: #FF4F4F;
 }
 
@@ -639,6 +639,26 @@ body h4 {
   font-size: 16px;
 }
 
+.js-contacttp-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.js-contacttp-section .image-color-overlay {
+  min-height: auto !important;
+  width: 100%;
+}
+
+.js-contacttp-section .image-color-overlay .btn {
+  margin-top: 0;
+  padding: 10px 25px;
+}
+
 .js-pricing-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,6 +704,65 @@ body h4 {
 
 .js-pricing-section .js-price-card a.btn-primary {
   padding: 8px 25px;
+}
+
+.js-feature_post-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.js-feature_post-section .image-color-overlay {
+  min-height: auto !important;
+  width: 100%;
+}
+
+.js-feature_post-section .image-color-overlay .js-feature-heading {
+  text-align: center;
+  margin-bottom: 3.4375rem;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 50px black, 0px 0px 10px black;
+          box-shadow: 0px 0px 50px black, 0px 0px 10px black;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card img {
+  border-radius: 0 !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body {
+  margin-top: 0.9375rem;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 {
+  margin-bottom: 1.125rem;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a {
+  text-decoration: none;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 {
+  margin-bottom: 0.9375rem;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 a {
+  text-decoration: none;
+}
+
+.js-feature_post-section .image-color-overlay .js-post-card .card .card-body a {
+  text-decoration: none;
+  margin-top: 0.9375rem;
 }
 
 .animated {

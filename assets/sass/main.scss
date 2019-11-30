@@ -629,6 +629,28 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         
     }
 }
+//start portfolio section
+
+
+
+// start contact tp section 
+.js-contacttp-section{
+    width:100%;
+    display:flex;
+    background:url('../images/bg-image.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    .image-color-overlay{
+        min-height:auto !important;
+        width:100%;
+        .btn{
+            margin-top:0;
+            padding:10px 25px;
+        }
+    }
+}
+// end contact tp section 
+
 
 
 
@@ -672,10 +694,67 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     }
 } 
 // end pricing section 
+
+
+//start feature post section
+.js-feature_post-section{
+    width:100%;
+    display:flex;
+    background:url('../images/background-image.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    .image-color-overlay{
+        min-height:auto !important;
+        width:100%;
+        .js-feature-heading{
+            text-align:center;
+            margin-bottom:rem(55px);
+        }
+        .js-post-card{
+            .card{
+                border:none;
+                @extend .bg-mattGray;
+                border-radius:0;
+                box-shadow:$boxShadow;
+                img{
+                    border-radius:0 !important;
+                    object-fit:cover;
+                    height:250px;
+                }
+                .card-body{
+                    margin-top:rem(15px);
+                    h4{
+                        margin-bottom:rem(18px);
+                        a{
+                            text-decoration:none;
+                            @extend .text-fontWhite;
+                            transition:$easeTIme;
+                            &:hover{
+                                @extend .text-mattGreen;
+                            }
+                        }
+                    }
+                    h6{
+                        margin-bottom:rem(15px);
+                        a{
+                            text-decoration:none;
+                            @extend .text-mattGreen;
+                        }
+                    }
+                    a{
+                        text-decoration:none;
+                        @extend .text-mattGreen;
+                        margin-top:rem(15px);
+                    }
+                }
+            }
+        }
+    }
+}
+//end feature post section
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
-//start portfolio section
+}

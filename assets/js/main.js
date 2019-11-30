@@ -78,7 +78,7 @@ $(".owl-carousel").owlCarousel({
     responsiveClass: true,
     autoHeight: true,
     // autoplayTimeout: 5000,
-    // smartSpeed: 2000,
+    smartSpeed:1000,
     nav: true,
     responsive:{
         0:{
@@ -88,7 +88,7 @@ $(".owl-carousel").owlCarousel({
             items:1,
         },
         1000:{
-            items:2,
+            items:2
         }
     }
 });
