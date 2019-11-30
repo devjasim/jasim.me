@@ -8,7 +8,7 @@
 }
 
 .bg-mattGray, .section-header .navbar.block, .js-section-about-do .service, .skill-section .js-technical-skill .skillbar, .js-experience-section .js-education-details,
-.js-experience-section .js-experience-details, .js-pricing-section .js-price-card, .js-feature_post-section .image-color-overlay .js-post-card .card {
+.js-experience-section .js-experience-details, .js-pricing-section .js-price-card, .js-feature_post-section .image-color-overlay .js-post-card .card, .js-contact-section .js-info-card {
   background-color: #1E1E24;
 }
 
@@ -750,6 +750,8 @@ body h4 {
 
 .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a {
   text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 {
@@ -763,6 +765,69 @@ body h4 {
 .js-feature_post-section .image-color-overlay .js-post-card .card .card-body a {
   text-decoration: none;
   margin-top: 0.9375rem;
+}
+
+.js-contact-section {
+  width: 100%;
+  display: block;
+}
+
+.js-contact-section .heading {
+  margin-bottom: 3.4375rem;
+}
+
+.js-contact-section .js-info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 50px black, 0px 0px 10px black;
+          box-shadow: 0px 0px 50px black, 0px 0px 10px black;
+}
+
+.js-contact-section .js-info-card .js-address,
+.js-contact-section .js-info-card .js-email,
+.js-contact-section .js-info-card .js-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.js-contact-section .js-info-card .js-address .icon,
+.js-contact-section .js-info-card .js-email .icon,
+.js-contact-section .js-info-card .js-phone .icon {
+  width: 100px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: column;
+      flex-wrap: column;
+  border: 1px solid red;
+  border-radius: 100%;
+}
+
+.js-contact-section .js-info-card .js-address .ad-details,
+.js-contact-section .js-info-card .js-email .ad-details,
+.js-contact-section .js-info-card .js-phone .ad-details {
+  margin-left: 2.5rem;
 }
 
 .animated {

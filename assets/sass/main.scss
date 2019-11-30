@@ -728,7 +728,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                         a{
                             text-decoration:none;
                             @extend .text-fontWhite;
-                            transition:$easeTIme;
+                            transition:$easeTime;
                             &:hover{
                                 @extend .text-mattGreen;
                             }
@@ -752,6 +752,46 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
     }
 }
 //end feature post section
+
+//start contact section
+.js-contact-section{
+    width:100%;
+    display:block;
+    .heading{
+        margin-bottom:rem(55px);
+    }
+    .js-info-card{
+        display:flex;
+        justify-content:left;
+        width:100%;
+        @extend .bg-mattGray;
+        margin-bottom:20px;
+        box-sizing:border-box;
+        box-shadow:$boxShadow;
+        .js-address,
+        .js-email,
+        .js-phone{
+            display:flex;
+            width:100%;
+            align-items:center;
+            padding:20px;
+            .icon{
+                width:100px;
+                height:100px;
+                justify-content: center;
+                align-items:center;
+                display:flex;
+                flex-wrap:column;
+                border:1px solid red;
+                border-radius:100%;
+            }
+            .ad-details{
+                margin-left:rem(40px);
+            }
+        }
+    }
+}
+//end contact section
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
