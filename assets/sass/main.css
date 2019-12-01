@@ -100,7 +100,7 @@ body h4 {
 }
 
 .image-bg-one {
-  background: url("../images/bg-image.png");
+  background: url("../images/project_03.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -383,7 +383,7 @@ body h4 {
 }
 
 .js-section-project {
-  background: url("../images/bg-image.png");
+  background: url("../images/bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -515,7 +515,7 @@ body h4 {
 }
 
 .js-experience-section {
-  background: url("../images/bg-image.png");
+  background: url("../images/project_03.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -645,7 +645,7 @@ body h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../images/bg-image.png");
+  background: url("../images/project_03.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

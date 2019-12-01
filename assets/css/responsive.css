@@ -122,6 +122,10 @@
     .js-feature_post-section .image-color-overlay .js-post-card{
         margin-bottom:20px;
     }
+    .js-contact-section .js-info-card .js-address .icon, .js-contact-section .js-info-card .js-email .icon, .js-contact-section .js-info-card .js-phone .icon{
+        width:80px;
+        height:80px;
+    }
 }
 
 
