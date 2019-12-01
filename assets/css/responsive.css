@@ -116,6 +116,12 @@
     .skill-section .js-professional-skill h2{
         margin-top:40px;
     }
+    .js-pricing-section .js-price-card{
+        margin-bottom:20px;
+    }
+    .js-feature_post-section .image-color-overlay .js-post-card{
+        margin-bottom:20px;
+    }
 }
 
 

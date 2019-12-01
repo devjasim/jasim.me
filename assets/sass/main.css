@@ -726,6 +726,10 @@ body h4 {
   margin-bottom: 3.4375rem;
 }
 
+.js-feature_post-section .image-color-overlay .js-post-card {
+  width: 100%;
+}
+
 .js-feature_post-section .image-color-overlay .js-post-card .card {
   border: none;
   border-radius: 0;

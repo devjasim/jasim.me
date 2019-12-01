@@ -245,6 +245,6 @@ $(document).ready(function(){
         animateThreshold: 100,
         scrollPollInterval: 100
     }
-    $('.aniview').animate(options);
+    $('.aniview').AniView(options);
 })
 // scrolling animation 

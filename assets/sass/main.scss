@@ -711,6 +711,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             margin-bottom:rem(55px);
         }
         .js-post-card{
+            width:100%;
             .card{
                 border:none;
                 @extend .bg-mattGray;
