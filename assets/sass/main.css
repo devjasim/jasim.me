@@ -3,7 +3,7 @@
   background-color: #100E17;
 }
 
-.text-mattBlack {
+.text-mattBlack, .js-contact-section .js-contact-form .form-control:focus, .js-contact-section .js-contact-form .form-control:active:focus, .js-contact-section .js-contact-form .form-control:active {
   color: #100E17;
 }
 
@@ -16,7 +16,7 @@
   color: #1E1E24;
 }
 
-.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover, .js-contact-section footer .social-ft ul li a:hover {
+.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover, .js-contact-section .js-contact-form .form-control:focus, .js-contact-section .js-contact-form .form-control:active:focus, .js-contact-section .js-contact-form .form-control:active, .js-contact-section footer .social-ft ul li a:hover {
   background-color: #E7E7E8;
 }
 

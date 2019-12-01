@@ -808,6 +808,12 @@ $boxShadow: 0px 0px 15px 0px rgba(4, 0, 0, 0.87);
             &:focus{
                 box-shadow:none;
             }
+            &:focus,
+            &:active:focus,
+            &:active{
+                @extend .text-mattBlack;
+                @extend .bg-fontWhite;
+            }
         }
         .btn{
             width:100%;
