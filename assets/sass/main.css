@@ -825,13 +825,26 @@ body h4 {
   -ms-flex-wrap: column;
       flex-wrap: column;
   border: 1px solid red;
-  border-radius: 100%;
+  border-radius: 50%;
+  clear: both;
+}
+
+.js-contact-section .js-info-card .js-address .icon i,
+.js-contact-section .js-info-card .js-email .icon i,
+.js-contact-section .js-info-card .js-phone .icon i {
+  font-size: 20px;
 }
 
 .js-contact-section .js-info-card .js-address .ad-details,
 .js-contact-section .js-info-card .js-email .ad-details,
 .js-contact-section .js-info-card .js-phone .ad-details {
   margin-left: 2.5rem;
+}
+
+.js-contact-section .js-info-card .js-address .ad-details p,
+.js-contact-section .js-info-card .js-email .ad-details p,
+.js-contact-section .js-info-card .js-phone .ad-details p {
+  margin-bottom: 0;
 }
 
 .animated {
