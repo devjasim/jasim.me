@@ -231,10 +231,11 @@ $(document).ready(function(){
 	});
 });
 
+
+
 $(document).ready(function(){
     $('.menu-button').click(function(){
         $('.navbar').toggleClass('active');
-        console.log(clicked)
     })
 })
 

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-.bg-mattBlack, body {
+.bg-mattBlack, body, .js-contact-section .js-contact-form .form-control {
   background-color: #100E17;
 }
 
@@ -16,11 +16,11 @@
   color: #1E1E24;
 }
 
-.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover {
+.bg-fontWhite, .js-section-home .js-personal-dtls .social li a:hover, .js-contact-section footer .social-ft ul li a:hover {
   background-color: #E7E7E8;
 }
 
-.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a {
+.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a, .js-contact-section footer .social-ft ul li a {
   color: #E7E7E8;
 }
 
@@ -30,7 +30,7 @@
 
 .text-mattGreen, .btn:hover, .section-header .navbar .navbar-nav li a:hover, .section-header .navbar .navbar-nav li a.active, .js-section-home .js-personal-dtls ul li a:hover i, .skill-section .js-technical-skill .skillbar .skillbar-bar, .js-experience-section .js-education-details h4 a,
 .js-experience-section .js-experience-details h4 a, .js-experience-section .js-education-details .js-eduyear span,
-.js-experience-section .js-experience-details .js-eduyear span, .js-pricing-section .js-price-card i, .js-pricing-section .js-price-card h5, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a:hover, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body a {
+.js-experience-section .js-experience-details .js-eduyear span, .js-pricing-section .js-price-card i, .js-pricing-section .js-price-card h5, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a:hover, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h6 a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body a, .js-contact-section footer .social-ft ul li a:hover {
   color: #FF4F4F;
 }
 
@@ -232,7 +232,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls ul li {
   padding: 10px 0;
-  display: inline-block;
+  display: block;
 }
 
 .js-section-home .js-personal-dtls ul li a {
@@ -248,6 +248,7 @@ body h4 {
 
 .js-section-home .js-personal-dtls .social li {
   margin: 5px;
+  display: inline-block;
 }
 
 .js-section-home .js-personal-dtls .social li a {
@@ -845,6 +846,37 @@ body h4 {
 .js-contact-section .js-info-card .js-email .ad-details p,
 .js-contact-section .js-info-card .js-phone .ad-details p {
   margin-bottom: 0;
+}
+
+.js-contact-section .js-contact-form .form-control {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.js-contact-section footer .social-ft ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.js-contact-section footer .social-ft ul li {
+  margin: 5px;
+  display: inline-block;
+}
+
+.js-contact-section footer .social-ft ul li a {
+  -webkit-transition: all ease-out 0.25s;
+  transition: all ease-out 0.25s;
+}
+
+.js-contact-section footer .social-ft ul li a .icon {
+  margin-right: 0;
+}
+
+.js-contact-section footer .social-ft ul li a:hover {
+  border-radius: 5px;
 }
 
 .animated {

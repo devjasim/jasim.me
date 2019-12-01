@@ -220,7 +220,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             display:block;
             li{
                 padding: 10px 0;
-                display:inline-block;
+                display:block;
                 
                 a{
                     text-decoration:none;
@@ -239,6 +239,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
         .social{
             li{
                 margin:5px;
+                display:inline-block;
                 a{
                     transition:all ease-out $easeTime;
                     .icon{
@@ -794,6 +795,41 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                 margin-left:rem(40px);
                 p{
                     margin-bottom:0;
+                }
+            }
+        }
+    }
+    .js-contact-form{
+        .form-control{
+            border:none;
+            border-radius:5px;
+            @extend .bg-mattBlack;
+            border: 1px solid #ddd;
+        }
+    }
+    footer{
+        .social-ft{
+            ul{
+                margin:0;
+                padding:0;
+                list-style:none;
+                display:block;
+                li{
+                    margin:5px;
+                    display:inline-block;
+                    a{
+                        transition:all ease-out $easeTime;
+                        @extend .text-fontWhite;
+                        .icon{
+                            margin-right:0;
+                        }
+    
+                        &:hover{
+                            @extend .bg-fontWhite;
+                            border-radius:5px;
+                            @extend .text-mattGreen;
+                        }
+                    }
                 }
             }
         }
