@@ -74,7 +74,7 @@ body{
     }
 }    
 
-$boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
+$boxShadow: 0px 0px 15px 0px rgba(4, 0, 0, 0.87);
 .wrapper{
     width:100%;
     display:block;
@@ -784,7 +784,7 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
                 align-items:center;
                 display:flex;
                 flex-wrap:column;
-                border:1px solid red;
+                border:1px solid #FF4F4F;
                 border-radius:50%;
                 clear:both;
                 i{
@@ -804,10 +804,23 @@ $boxShadow: 0px 0px 50px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
             border:none;
             border-radius:5px;
             @extend .bg-mattBlack;
-            border: 1px solid #ddd;
+            border: 1px solid #E7E7E8;
+            &:focus{
+                box-shadow:none;
+            }
+        }
+        .btn{
+            width:100%;
+            border-radius:10px;
+        }
+        textarea{
+            @extend .text-fontWhite;
         }
     }
     footer{
+        .tranding{
+            margin-top:15px;
+        }
         .social-ft{
             ul{
                 margin:0;

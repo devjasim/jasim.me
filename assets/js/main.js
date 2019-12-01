@@ -205,7 +205,7 @@ $(window).scroll(function() {
 
     // Assign active class to nav links while scolling
     $('.jump').each(function(i) {
-            if ($(this).position().top <= scrollDistance +40) {
+            if ($(this).position().top <= scrollDistance +60) {
                     $('.nav-item a.active').removeClass('active');
                     $('.nav-item a').eq(i).addClass('active');
             }
