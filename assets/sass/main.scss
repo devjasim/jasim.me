@@ -575,6 +575,9 @@ $boxShadow: 0px 0px 15px 0px rgba(4, 0, 0, 0.87);
             }
         }
     }
+    .grid-group{
+        overflow:hidden;
+    }
     .grid-item{
         position:relative;
         margin-bottom:30px;
@@ -629,6 +632,17 @@ $boxShadow: 0px 0px 15px 0px rgba(4, 0, 0, 0.87);
             -webkit-transform:translate(-100%, -50%);
             -moz-transform:translate(-100%, -50%);
             -o-transform:translate(-100%, -50%);
+            span i{
+                font-size:20px;
+                @extend .text-fontWhite;
+            }
+            h4{
+                @extend .text-fontWhite;
+                font-size:18px;
+                font-weight:400;
+                margin-top:5px;
+                margin-bottom:0;
+            }
         }
         
     }

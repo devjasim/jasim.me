@@ -20,7 +20,7 @@
   background-color: #E7E7E8;
 }
 
-.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a, .js-contact-section .js-contact-form textarea, .js-contact-section footer .social-ft ul li a {
+.text-fontWhite, body, .btn, .section-header .navbar .navbar-nav li a, .js-section-home .js-personal-dtls span.title, .js-section-home .js-personal-dtls span.wrap, .js-section-home .js-personal-dtls ul li a, .js-portfolio-section .grid-item .img_cnt span i, .js-portfolio-section .grid-item .img_cnt h4, .js-feature_post-section .image-color-overlay .js-post-card .card .card-body h4 a, .js-contact-section .js-contact-form textarea, .js-contact-section footer .social-ft ul li a {
   color: #E7E7E8;
 }
 
@@ -576,6 +576,10 @@ body h4 {
   background: none;
 }
 
+.js-portfolio-section .grid-group {
+  overflow: hidden;
+}
+
 .js-portfolio-section .grid-item {
   position: relative;
   margin-bottom: 30px;
@@ -635,6 +639,17 @@ body h4 {
   -webkit-transform: translate(-100%, -50%);
   -moz-transform: translate(-100%, -50%);
   -o-transform: translate(-100%, -50%);
+}
+
+.js-portfolio-section .grid-item .img_cnt span i {
+  font-size: 20px;
+}
+
+.js-portfolio-section .grid-item .img_cnt h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .fadeLeft {
