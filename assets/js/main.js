@@ -68,30 +68,29 @@ window.onload = function() {
 };
 
 
-$(".owl-carousel").owlCarousel({
-    autoplay: false,
-    lazyLoad: true,
-    loop: true,
-    margin: 20,
-    // animateOut: 'fadeOut',
-    // animateIn: 'fadeIn',
-    responsiveClass: true,
-    autoHeight: true,
-    // autoplayTimeout: 5000,
-    smartSpeed:1000,
-    nav: true,
-    responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:1,
-        },
-        1000:{
-            items:2
+$(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        autoplay: false,
+        loop: true,
+        margin: 20,
+        smartSpeed:1000,
+        nav: true,
+        pagination:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            1000:{
+                items:2
+            }
         }
-    }
-});
+    });
+})
 //end owl carousel
 
 
@@ -244,7 +243,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     var options = {
         animateThreshold: .5,
-        scrollPollInterval:200
+        scrollPollInterval:1
     }
     $('.aniview').AniView(options);
 })
